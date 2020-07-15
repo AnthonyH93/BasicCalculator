@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         //Limit number of digits to 9
         if runningNumber.count <= 8 {
             let digit = "\(sender.tag)"
-            if (digit == "0" && runningNumber == ""){
+            if ((digit == "0") && (runningNumber == "")){
                 //if 0 is pressed and calculator is showing 0 then do nothing
             }
             else {
@@ -65,8 +65,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func deletePressed(_ sender: RoundButton) {
-        if runningNumber == "" || runningNumber ==  "0" {
+        if (runningNumber.count == 0) {
             //Nothing to delete
+        }
+        else {
+            //Need to set label to 0 when we remove last digit
+            if (runningNumber.count == 1){
+                runningNumber = ""
+                outputLabel.text = "0"
+            }
+            else {
+                runningNumber.removeLast()
+                outputLabel.text = runningNumber
+            }
         }
     }
     

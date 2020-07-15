@@ -57,7 +57,6 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPQ-se-5ek"/>
                                                             <action selector="signPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJM-F8-xx6"/>
                                                         </connections>
                                                     </button>
@@ -76,7 +75,6 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRf-G6-GK2"/>
                                                             <action selector="deletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uH5-lc-t5E"/>
                                                         </connections>
                                                     </button>
@@ -99,10 +97,6 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="350" id="OJ1-tO-yvo"/>
-                                                    <constraint firstAttribute="height" constant="80" id="wEc-b3-UJk"/>
-                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vSw-zA-epi">
                                                 <rect key="frame" x="0.0" y="92.666666666666686" width="350" height="80"/>
