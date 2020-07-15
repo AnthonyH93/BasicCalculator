@@ -127,7 +127,12 @@ class ViewController: UIViewController {
         }
         else {
             //If string is empty it should be interpreted as a 0
-            leftValue = "0"
+            if runningNumber == "" {
+                leftValue = "0"
+            }
+            else {
+                leftValue = runningNumber
+            }
             runningNumber = ""
             currentOperation = operation
         }
