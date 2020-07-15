@@ -40,8 +40,14 @@ class ViewController: UIViewController {
         
         //Limit number of digits to 9
         if runningNumber.count <= 8 {
-            runningNumber += "\(sender.tag)"
-            outputLabel.text = runningNumber
+            let digit = "\(sender.tag)"
+            if (digit == "0" && runningNumber == ""){
+                //if 0 is pressed and calculator is showing 0 then do nothing
+            }
+            else {
+                runningNumber += "\(sender.tag)"
+                outputLabel.text = runningNumber
+            }
         }
     }
     @IBAction func allClearPressed(_ sender: RoundButton) {
