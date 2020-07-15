@@ -109,8 +109,18 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValue)! * Double(rightValue)!)"
 
                 case .Divide:
-                    result = "\(Double(leftValue)! / Double(rightValue)!)"
+                    //Output Error! if division by 0
+                    if Int(rightValue)! == 0 {
+                        result = "Error!"
+                        outputLabel.text = result
+                        currentOperation = operation
+                        return
+                    }
+                    else {
+                        result = "\(Double(leftValue)! / Double(rightValue)!)"
+                    }
                     
+                //Should not occur
                 default:
                     fatalError("Unexpected Operation...")
                 }
