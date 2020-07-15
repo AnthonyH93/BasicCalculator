@@ -25,10 +25,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-K5-diO" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="240" id="WCh-rs-Rr3"/>
+                                                            <constraint firstAttribute="width" constant="80" id="WCh-rs-Rr3"/>
                                                             <constraint firstAttribute="height" constant="80" id="cla-XJ-QGE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
@@ -40,6 +40,44 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FqZ-gS-oaM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43h-9b-6yI" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="fvB-QV-Yow"/>
+                                                            <constraint firstAttribute="height" constant="80" id="w5g-N6-Pby"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                                        <state key="normal" title="±">
+                                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPQ-se-5ek"/>
+                                                            <action selector="signPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJM-F8-xx6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAY-SJ-AdR" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="2L6-og-Sh7"/>
+                                                            <constraint firstAttribute="width" constant="80" id="ccI-8c-ui2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                                        <state key="normal" title="DEL">
+                                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRf-G6-GK2"/>
+                                                            <action selector="deletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uH5-lc-t5E"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgY-Zb-XdC" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">

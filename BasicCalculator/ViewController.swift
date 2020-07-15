@@ -54,6 +54,16 @@ class ViewController: UIViewController {
         outputLabel.text = "0"
     }
     
+    @IBAction func signPressed(_ sender: RoundButton) {
+        
+    }
+    
+    @IBAction func deletePressed(_ sender: RoundButton) {
+        if runningNumber == "" || runningNumber ==  "0" {
+            //Nothing to delete
+        }
+    }
+    
     @IBAction func dotPressed(_ sender: RoundButton) {
         
         //Last character cannot be a dot
