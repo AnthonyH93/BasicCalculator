@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         //Limit number of digits to 9
         if runningNumber.count <= 8 {
             let digit = "\(sender.tag)"
-            if ((digit == "0") && (runningNumber == "")){
+            if ((digit == "0") && (outputLabel.text == "0")){
                 //if 0 is pressed and calculator is showing 0 then do nothing
             }
             else {
@@ -62,6 +62,24 @@ class ViewController: UIViewController {
     
     @IBAction func signPressed(_ sender: RoundButton) {
         
+        //Essentially need to multiply the number by -1
+        if (outputLabel.text == "0" || runningNumber == ""){
+            runningNumber = ""
+            outputLabel.text = "0"
+        }
+        else {
+            var number = Double(runningNumber)!
+            number *= -1
+            
+            //Find out if number is an integer
+            if((number).truncatingRemainder(dividingBy: 1) == 0) {
+                runningNumber = "\(Int(number))"
+            }
+            else {
+                runningNumber = "\(number)"
+            }
+            outputLabel.text = runningNumber
+        }
     }
     
     @IBAction func deletePressed(_ sender: RoundButton) {
