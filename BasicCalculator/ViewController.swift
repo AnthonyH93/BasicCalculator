@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         
         //Last character cannot be a dot
         if runningNumber.count <= 7 && !runningNumber.contains(".") {
-            if (outputLabel.text == "0"){
+            if (outputLabel.text == "0" || runningNumber == ""){
                 runningNumber = ""
                 runningNumber = "0."
                 outputLabel.text = runningNumber
