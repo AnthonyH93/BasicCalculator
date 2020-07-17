@@ -174,6 +174,10 @@ class ViewController: UIViewController {
                 
                 if (Double(result)! > 999999999){
                     //Need to use scientific notation for this
+                    result = "\(Double(result)!.scientificFormatted)"
+                    outputLabel.text = result
+                    currentOperation = operation
+                    return
                 }
                 //Find out if result is an integer
                 if(Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
