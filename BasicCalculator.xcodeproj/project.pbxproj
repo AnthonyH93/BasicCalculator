@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D62FB4724BD46A000DD2E0C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62FB4624BD46A000DD2E0C /* RoundButton.swift */; };
+		9DEAFFA424C15AC000155182 /* Formatter+ScientificNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAFFA324C15AC000155182 /* Formatter+ScientificNotation.swift */; };
 		9DF35CF824BC038F00CA4627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF35CF724BC038F00CA4627 /* AppDelegate.swift */; };
 		9DF35CFA24BC038F00CA4627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF35CF924BC038F00CA4627 /* SceneDelegate.swift */; };
 		9DF35CFC24BC038F00CA4627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF35CFB24BC038F00CA4627 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		9D62FB4624BD46A000DD2E0C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		9DEAFFA324C15AC000155182 /* Formatter+ScientificNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+ScientificNotation.swift"; sourceTree = "<group>"; };
 		9DF35CF424BC038F00CA4627 /* BasicCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF35CF724BC038F00CA4627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF35CF924BC038F00CA4627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DEAFFA224C15A8C00155182 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAFFA324C15AC000155182 /* Formatter+ScientificNotation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9DF35CEB24BC038F00CA4627 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		9DF35CF624BC038F00CA4627 /* BasicCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9DEAFFA224C15A8C00155182 /* Extensions */,
 				9DF35CF724BC038F00CA4627 /* AppDelegate.swift */,
 				9DF35CF924BC038F00CA4627 /* SceneDelegate.swift */,
 				9DF35CFB24BC038F00CA4627 /* ViewController.swift */,
@@ -209,6 +220,7 @@
 				9DF35D0224BC038F00CA4627 /* BasicCalculator.xcdatamodeld in Sources */,
 				9D62FB4724BD46A000DD2E0C /* RoundButton.swift in Sources */,
 				9DF35CFC24BC038F00CA4627 /* ViewController.swift in Sources */,
+				9DEAFFA424C15AC000155182 /* Formatter+ScientificNotation.swift in Sources */,
 				9DF35CF824BC038F00CA4627 /* AppDelegate.swift in Sources */,
 				9DF35CFA24BC038F00CA4627 /* SceneDelegate.swift in Sources */,
 			);

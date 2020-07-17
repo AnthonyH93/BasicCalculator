@@ -172,6 +172,9 @@ class ViewController: UIViewController {
                 
                 leftValue = result
                 
+                if (Double(result)! > 999999999){
+                    //Need to use scientific notation for this
+                }
                 //Find out if result is an integer
                 if(Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
                     result = "\(Int(Double(result)!))"
