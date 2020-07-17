@@ -155,7 +155,7 @@ class ViewController: UIViewController {
 
                 case .Divide:
                     //Output Error! if division by 0
-                    if Int(rightValue)! == 0 {
+                    if Double(rightValue)! == 0.0 {
                         result = "Error!"
                         outputLabel.text = result
                         currentOperation = operation
@@ -175,6 +175,26 @@ class ViewController: UIViewController {
                 //Find out if result is an integer
                 if(Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
                     result = "\(Int(Double(result)!))"
+                }
+                else {
+                    if (result.count > 9){
+                        //Need to round to 9 digits
+                        //First find how many digits the decimal portion is
+                        var num = Double(result)!
+                        var counter = 1
+                        while (num > 1){
+                            counter *= 10
+                            num = num/10
+                        }
+                        var roundVal = 0
+                        if (counter == 1){
+                            roundVal = 100000000/(counter)
+                        }
+                        else {
+                            roundVal = 1000000000/(counter)
+                        }
+                        result = "\(Double(round(Double(roundVal) * Double(result)!)/Double(roundVal)))"
+                    }
                 }
                 outputLabel.text = result
             }
