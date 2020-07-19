@@ -181,7 +181,12 @@ class ViewController: UIViewController {
                 }
                 //Find out if result is an integer
                 if(Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
-                    result = "\(Int(Double(result)!))"
+                    if Double(result)! > Double(Int.max) || Double(result)! < Double(Int.min) {
+                        //Cannot convert to integer in this casse
+                    }
+                    else {
+                        result = "\(Int(Double(result)!))"
+                    }
                 }
                 else {
                     if (result.count > 9){
