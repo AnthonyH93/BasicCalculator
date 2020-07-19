@@ -172,7 +172,7 @@ class ViewController: UIViewController {
                 
                 leftValue = result
                 
-                if (Double(result)! > 999999999){
+                if (Double(result)! > 999999999 || Double(result)! < -999999999){
                     //Need to use scientific notation for this
                     result = "\(Double(result)!.scientificFormatted)"
                     outputLabel.text = result
