@@ -2,7 +2,7 @@
 
 ## About
 
-Basic iOS calculator built in Xcode with Swift. Meant to mimic the default iOS calculator in both appearance and basic functionality.
+Basic iOS calculator built in Xcode with Swift. Meant to mimic the native iOS calculator in both appearance and basic functionality.
 
 Built to run on iPhones with iOS 13.0 and above, optimized to look good on all compatable iPhone screen sizes.
 
