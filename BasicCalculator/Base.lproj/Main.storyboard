@@ -345,11 +345,11 @@
                                                 <rect key="frame" x="0.0" y="370" width="350" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne0-cA-Zxt" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="BFs-xm-vXe"/>
-                                                            <constraint firstAttribute="width" constant="160" id="fpE-wq-fCO"/>
+                                                            <constraint firstAttribute="width" constant="170" id="fpE-wq-fCO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                                         <state key="normal" title="0">
@@ -363,7 +363,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-Ql-3Cn" customClass="RoundButton" customModule="BasicCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="175" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="NbL-G7-BXG"/>
