@@ -18,8 +18,8 @@ Built to run on iPhones with iOS 13.0 and above, optimized to look good on all c
 
 ## Device Screenshots
 
-Below are some screenshots from an iPhoneX simulator showing some of the BasicCalculator functionalities
+Below are some screenshots from an iPhone X simulator showing some of the BasicCalculator functionalities
 
 Default Initial Screen | Integer Output | Rounded Double Output | Negative Scientific Notation Output
 ---------------------- | -------------- | --------------------- | -----------------------------------
-![alt text](InitalScreen.png?raw=true) | ![alt text](IntegerOutput.png?raw=true) | ![alt text](RoundedDoubleOutput.png?raw=true) | ![alt text](NegativeScientificNotation.png?raw=true)
+![alt text](InitialScreen.png?raw=true) | ![alt text](IntegerOutput.png?raw=true) | ![alt text](RoundedDoubleOutput.png?raw=true) | ![alt text](NegativeScientificNotation.png?raw=true)
